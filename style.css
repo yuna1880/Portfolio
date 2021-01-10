@@ -3,16 +3,16 @@
     /*Color*/
     --color-white: white;
     --color-light-white: #fafafa;
-    --color-pink:#ffbaba;
-    --color-dark-pink:#e87979;
+    --color-pink: #ffbaba;
+    --color-dark-pink: #e87979;
     --color-black: black;
-    --color-dark-grey:#454545;
+    --color-dark-grey: #454545;
     --color-grey: #878787;
-    --color-light-grey:#c7c7c7;
-    --color-blue:#6bc5e8;
-    --color-yellow:#fff891;
-    --color-orange:#ffbb5c;
-    
+    --color-light-grey: #c7c7c7;
+    --color-blue: #6bc5e8;
+    --color-yellow: #fff891;
+    --color-orange: #ffbb5c;
+
 
     /*Font Size*/
     --font-large: 48px;
@@ -27,17 +27,43 @@
     --weight-regular: 400;
 
     /*Size*/
-    
-    
+
+
 }
 
 /*Universal tags*/
 
-*{
-/* padding, border포함해도 동일한 너비 되도록 */
-    box-sizing:border-box;
+* {
+    /* padding, border포함해도 동일한 너비 되도록 */
+    box-sizing: border-box;
 }
 
+/*Typography*/
 
+h1 {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    margin: 16px 0;
+}
 
+h2 {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-black);
+    margin: 8px 0;
+}
 
+h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 8px 0;
+}
+
+p {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 4px 0;
+}
