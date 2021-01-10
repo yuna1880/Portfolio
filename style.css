@@ -24,9 +24,11 @@
     /*Font weight*/
     --weight-bold: 700;
     --weight-semi-bold: 600;
+    --weight-medium:500;
     --weight-regular: 400;
 
     /*Size*/
+    --size-border-radius: 4px;
 
 
 }
@@ -36,6 +38,20 @@
 * {
     /* padding, border포함해도 동일한 너비 되도록 */
     box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    cursor: default;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+ul{
+    list-style: none;
+    padding-left: 0;
 }
 
 /*Typography*/
@@ -67,3 +83,50 @@ p {
     color: var(--color-black);
     margin: 4px 0;
 }
+
+/*Navbar*/
+
+#navbar{
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--color-pink);
+    align-items: center;
+    padding: 16px;
+}
+
+.navbar__menu{
+    display: flex;
+}
+.navbar__logo {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+}
+.navbar__menu_item{
+    padding 8px 12px;
+    margin: 0 4px;
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: var(--size-border-radius);
+}
+
+.navbar__menu_item.active{
+    padding: 3px;
+    border: 1px solid var(--color-white);
+}
+.navbar__menu_item:hover{
+    background-color: var(--color-dark-pink); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
