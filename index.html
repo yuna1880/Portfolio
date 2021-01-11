@@ -14,7 +14,7 @@
     <!-- font awsome -->
     <script src="https://kit.fontawesome.com/2ce4018d5a.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -27,7 +27,7 @@
     <nav id="navbar">
         <div class="navbar__logo">
             <img class="img" src="imgs/favicon4.png" alt="fabcon" width="30px">
-            <a class="logo" href="#" >YUNA</a>
+            <a class="logo" href="#">YUNA</a>
         </div>
         <div>
             <ul class="navbar__menu">
@@ -41,37 +41,53 @@
         </div>
     </nav>
     <section id="home">
-        <img src="imgs/profile1.JPG" alt="Yuna's profile photo" class="home_avatar" width="150px">
-        
-        <h1 class="home__title">  <br><br></h1>
-        <h2 class="home__disription">   <br></h2>
-        
-        <button class="home_contact">Contact me</button>
+
+        <h1 class="home__title"> <br><br><br></h1>
+        <h2 class="home__disription"> <br><br></h2>
+
+        <button class="home_contact">CONTACT ME</button>
     </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About me</h1>
-        <p> introduce my self introduce my self introduce my self introduce my self introduce my self introduce my self introduce my self introduce my self introduce my self introduce my self introduce my self introduce my self </p>
+        <p> 권유나 (Female)<br>
+            1993.09.27(+)<br>
+            (Mobile)010.5847.1880<br>
+            yunang1880@naver.com
+        </p> <br>
+
+        <img src="imgs/profile1.JPG" alt="Yuna's profile photo" class="home_avatar" width="150px">
+
         <div class="about__majors">
             <div class="major">
-                <div class="major__icon"></div>
-                <div class="major__title">Front-end</div>
+                <div class="major__icon">
+                    <i class="fas fa-running"></i>
+                </div>
+                <h2 class="major__title">Who?</h2>
                 <div class="major__description">
-                    HTML, CSS, Javascript <br />
+                    '세상에 건강한 영향을 미칠 수 있는 사람'<br>
+                    사용자 '수천명'에게 신나고 편리한 서비스를<br> 제공하면서 그들의 생활에 긍정적인 영향을<br> 끼칠 수 있는 개발자가 되고자 합니다. <br>
+                    정체되어있지 않고 더 발전하기 위해 <br>
+                    항상 노력합니다. <br>
                 </div>
             </div>
             <div class="major">
-                <div class="major__icon"></div>
-                <div class="major__title">Back-end</div>
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h2 class="major__title">Front-end</h2>
                 <div class="major__description">
-                    Java, mysql, Oracle, JDBC <br />
+                    HTML5, CSS, Javascript <br>
                 </div>
             </div>
             <div class="major">
-                <div class="major__icon"></div>
-                <div class="major__title">Tools</div>
+                <div class="major__icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h2 class="major__title">Back-end</h2>
                 <div class="major__description">
-                    Photoshop, Illustration <br />
+                    Java, mysql, Oracle, <br>
+                    JDBC, Spring, Survlet, Mybatis <br>
                 </div>
             </div>
 
@@ -79,13 +95,15 @@
         <div class="about__jobs">
             <div class="job">
                 <img src="imgs/favicon3.png" width="30px" alt="explain" class="job__logo">
+                <div class="job__description">
                 <p class="job__name">beat camp</p>
                 <p class="job__period">6months</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
         <h1>Skills</h1>
         <h2>Skills & Attribute</h2>
         <p>Passion for learning new technologies, Capable of working within a team environment and independently. Ability to plan and time schedule, work under strict time pressure and adapt quickly when needed
@@ -165,7 +183,7 @@
         </div>
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
@@ -212,7 +230,7 @@
         </div>
     </section>
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonials">
@@ -239,7 +257,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let's work together!</h1>
         <h2 class="contact__email">yunang1880@naver.com</h2>
         <div class="contact__links">
