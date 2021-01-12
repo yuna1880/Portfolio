@@ -186,7 +186,7 @@ p {
 .about__majors {
     display: flex;
     justify-content: space-between;
-    margin: 80px 0;
+    margin: 60px 0;
 
 }
 
@@ -378,4 +378,35 @@ p {
 
 #skills {
     /*    background-color: var(--color-beige);*/
+}
+
+/*Contact*/
+
+#contact{
+    background-color: var(--color-dark-grey);
+}
+.contact__title,
+.contact__email,
+.contact__rights{
+    color: var(--color-beige);
+}
+.contact_title{
+    margin: 32px 0;
+}
+.contact__email{
+    font-size: 20px;
+}
+.contact__rights{
+    font-size: var(--font-micro);
+}
+.contact__links{
+    font-size: var(--font-large);
+    margin: 24px 0;
+}
+.contact__links i:hover{
+    transform: scale(1.1);
+    color: pink;
+    transition: all var(--animation-duration) ease-in;
+}
+    
 }
