@@ -135,6 +135,15 @@ p {
     background-color: var(--color-dark-pink);
 }
 
+.navbar__toggle-btn{
+    position: absolute;
+    right: 32px;
+    top:20px;
+    color: var(--color-beige);
+    font-size: 24px;
+    display: none;
+}
+
 .img {
 
     align-items: center;
@@ -449,5 +458,57 @@ p {
     color: pink;
     transition: all var(--animation-duration) ease-in;
 }
-    
+
+/*미디어 쿼리 안에 들어가는 내용은 최소한으로!! */
+@media screen and (max-width:768px){
+    .navbar__toggle-btn{
+        display: block;
+    }
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar__menu{
+        flex-direction: column;
+        text-align: center;
+        width:100%;
+        display: none;
+    }
+    .about__majors{
+        flex-direction: column;
+    }
+    .major{
+        margin-bottom: 38px;
+    }
+    .project{
+    /*알아서 화면 매꿔주는 것*/
+        flex-grow: 1;
+        
+    }
+    .testimonial__avatar{
+        width: 80px;
+        height: 80px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
