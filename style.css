@@ -118,12 +118,11 @@ p {
 }
 
 .navbar__menu_item {
-
     margin: 0 4px;
     color: var(--color-beige);
     cursor: pointer;
     border-radius: var(--size-border-radius);
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .navbar__menu_item.active {
@@ -378,6 +377,48 @@ p {
 
 #skills {
     /*    background-color: var(--color-beige);*/
+}
+
+/*Testimonials*/
+#testimonials{
+    
+}
+
+.testimonials{
+    margin: 40px;
+    
+}
+
+.testimonial_inside{
+    display: flex;
+    margin: 32px 0;
+}
+.testimonial__avatar{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 11px;
+}
+
+.testimonial__avatar:nth-child(odd){
+    margin-right: 50px;
+}
+
+.testimonial__avatar:nth-child(even){
+    margin-left: 50px;
+}
+
+
+.testimonial__speech-bubble{
+    padding: 18px;
+    background-color: var(--color-beige);
+    border-radius: var(--size-border-radius);
+}
+.testimonial__speech-bubble p{
+    color: var(--color-dark-grey);
+}
+.testimonial__speech-bubble a{
+    color: pink;
 }
 
 /*Contact*/
