@@ -35,8 +35,19 @@ contactBtn.addEventListener('click', (event) =>{
     scrollIntoView('#contact');
 });
 
-//
+// Scrolling 할때마다 상단 home transparent 하게 만들기.
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=>{
+    // 스크롤 내릴때마다 1 -> 0.5 -> 0 -> -1 ...
+    // console.log(1 - window.scrollY / homeHeight); 
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
+//스크롤 함수
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior : "smooth"} );
 }
+
