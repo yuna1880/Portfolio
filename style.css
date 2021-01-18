@@ -108,7 +108,6 @@ p {
     padding: 16px;
     transition: all var(--animation-duration) ease-in-out;
     z-index: 1;
-    
 }
 #navbar.navbar--dark{
     background-color: black;
@@ -120,8 +119,11 @@ p {
 }
 
 .navbar__logo {
+    display:flex;
+    align-items: center;
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
+
 }
 
 .navbar__menu_item {
@@ -133,9 +135,7 @@ p {
 }
 
 .navbar__menu_item.active {
-
     /*border: 1px solid var(--color-beige);*/
-
 }
 
 .navbar__menu_item:hover {
@@ -152,9 +152,7 @@ p {
 }
 
 .img {
-
     align-items: center;
-
 }
 
 /* Home */
@@ -465,11 +463,32 @@ p {
     color: pink;
     transition: all var(--animation-duration) ease-in;
 }
+/* Scroll */
+.arrow-up{
+    position:fixed;
+    bottom: 40px;
+    right:40px;
+    width:70px;
+    height: 70px;
+    font-size: 50px;
+    color: black;
+    opacity:0;
+    transition: opacity 300ms ease-in;
+    /* 안보일때는 클릭이 안되도록 pointer evernts */
+    pointer-events: none;
+}
+.arrow-up.visible{
+    opacity:1;
+    pointer-events: auto;
+}
 
 /*미디어 쿼리 안에 들어가는 내용은 최소한으로!! */
 @media screen and (max-width:768px){
     .navbar__toggle-btn{
+        position: fixed;
         display: block;
+        top:10px;
+        right:10px;
     }
     #navbar{
         flex-direction: column;

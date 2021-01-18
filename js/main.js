@@ -1,6 +1,5 @@
 'use strict';
 
-
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
@@ -22,7 +21,7 @@ navbarMenu.addEventListener('click', (event) => {
     const target = event.target;
     const link = target.dataset.link;
 
-    if(link == null){
+    if (link == null) {
         return;
     }
     //console.log(event.target.dataset.link);
@@ -31,23 +30,39 @@ navbarMenu.addEventListener('click', (event) => {
 
 //contact 버튼 선택시, Scrolling되어 화면 이동.
 const contactBtn = document.querySelector('.home_contact');
-contactBtn.addEventListener('click', (event) =>{
+contactBtn.addEventListener('click', (event) => {
     scrollIntoView('#contact');
 });
 
 // Scrolling 할때마다 상단 home transparent 하게 만들기.
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
-document.addEventListener('scroll', ()=>{
+document.addEventListener('scroll', () => {
     // 스크롤 내릴때마다 1 -> 0.5 -> 0 -> -1 ...
     // console.log(1 - window.scrollY / homeHeight); 
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+// Arrow-up Button -> 스크롤시 나오도록!
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if (window.scrollY > homeHeight / 2) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
+
+
+arrowUp.addEventListener('click', (event) => {
+    scrollIntoView('#home');
+});
+
 
 //스크롤 함수
-function scrollIntoView(selector){
+function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
-    scrollTo.scrollIntoView({ behavior : "smooth"} );
+    scrollTo.scrollIntoView({
+        behavior: "smooth"
+    });
 }
-
