@@ -119,66 +119,74 @@
                 <h1>PROJECT</h1>
                 <h3>More details about my projects ⇊ </h3>
                 <div class="work__categories">
-                    <button class="category__btn active">All<span class="category__count">8</span></button>
-                    <button class="category__btn">Back-end<span class="category__count">3</span>
+                    <button class="category__btn active" data-filter="*">All<span class="category__count">8</span></button>
+                    <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">3</span>
                     </button>
-                    <button class="category__btn">Front-end<span class="category__count">4</span>
+                    <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">4</span>
                     </button>
-                    <button class="category__btn">Learn<span class="category__count">2</span>
+                    <button class="category__btn" data-filter="learning">Learning<span class="category__count">2</span>
                     </button>
                 </div>
 
                 <div class="work__projects">
-                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank">
+                    <!-- 위의 버튼 클릭하면 data filter 값에 따라서 데이터 타입에 해당하는 것들 보여주기. -->
+                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank" data-type="back-end">
                         <img class="project__img" src="imgs/porjects/console.png" alt="Login_Project" width="200px">
                         <div class="project__deiscription">
                             <h3>Login Project</h3>
                             <span>Console project with Java and Oracle (JDBC)</span>
                         </div>
                     </a>
-                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank">
+                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank" data-type="back-end">
                         <img class="project__img" src="imgs/porjects/console.png" alt="Login_Project" width="200px">
                         <div class="project__deiscription">
                             <h3>Login Project</h3>
                             <span>Console project with Java and Oracle (JDBC)</span>
                         </div>
                     </a>
-                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank">
+                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank" data-type="back-end">
                         <img class="project__img" src="imgs/porjects/console.png" alt="Login_Project" width="200px">
                         <div class="project__deiscription">
                             <h3>Login Project</h3>
                             <span>Console project with Java and Oracle (JDBC)</span>
                         </div>
                     </a>
-                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank">
+                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank" data-type="back-end">
                         <img class="project__img" src="imgs/porjects/console.png" alt="Login_Project" width="200px">
                         <div class="project__deiscription">
                             <h3>Login Project</h3>
                             <span>Console project with Java and Oracle (JDBC)</span>
                         </div>
                     </a>
-                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank">
+                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank" data-type="front-end">
                         <img class="project__img" src="imgs/porjects/console.png" alt="Login_Project" width="200px">
                         <div class="project__deiscription">
                             <h3>Login Project</h3>
                             <span>Console project with Java and Oracle (JDBC)</span>
                         </div>
                     </a>
-                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank">
+                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank" data-type="front-end">
                         <img class="project__img" src="imgs/porjects/console.png" alt="Login_Project" width="200px">
                         <div class="project__deiscription">
                             <h3>Login Project</h3>
                             <span>Console project with Java and Oracle (JDBC)</span>
                         </div>
                     </a>
-                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank">
+                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank" data-type="front-end">
                         <img class="project__img" src="imgs/porjects/console.png" alt="Login_Project" width="200px">
                         <div class="project__deiscription">
                             <h3>Login Project</h3>
                             <span>Console project with Java and Oracle (JDBC)</span>
                         </div>
                     </a>
-                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank">
+                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank" data-type="learning">
+                        <img class="project__img" src="imgs/porjects/console.png" alt="Login_Project" width="200px">
+                        <div class="project__deiscription">
+                            <h3>Login Project</h3>
+                            <span>Console project with Java and Oracle (JDBC)</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank" data-type="learning">
                         <img class="project__img" src="imgs/porjects/console.png" alt="Login_Project" width="200px">
                         <div class="project__deiscription">
                             <h3>Login Project</h3>
@@ -324,7 +332,7 @@
     <button class="arrow-up">
         <i class="fas fa-chevron-circle-up"></i>
     </button>
-    
+
     <script src="js/main.js"></script>
 </body>
 
