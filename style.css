@@ -35,7 +35,6 @@
     --animation-duration: 300ms;
 
 }
-
 /*Universal tags*/
 
 * {
@@ -348,6 +347,9 @@ p {
     height: 200px;
     margin: 2px;
     background-color: var(--color-dark-grey);
+}
+.project.invisible{
+    display: none;
 }
 .project__img{
     max-width: 100%;
