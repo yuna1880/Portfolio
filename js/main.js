@@ -24,8 +24,15 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     //console.log(event.target.dataset.link);
     scrollIntoView(link);
+});
+
+//navbar 토클버튼 내려오도록!
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
 });
 
 //contact 버튼 선택시, Scrolling되어 화면 이동.
@@ -68,6 +75,16 @@ workBtncontainer.addEventListener('click', (e) => {
     if(filter == null){
         return;
     }
+
+    //active 상태 변경 -> 클릭된 버튼으로 셀렉션 변경해주기.
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    // 버튼일때는 e.target을 지정. 버튼이 아닐때는 (span일 경우) parentNode를 지정.
+    const target = e.target.nodeName === 'BUTTON' ? e.target :
+                     e.target.parentNode;                
+    e.target.classList.add('selected');
+    
+
     projectContainer.classList.add('anim-out');
     setTimeout(() => {
         //console.log(filter); 
