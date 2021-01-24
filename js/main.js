@@ -68,7 +68,9 @@ workBtncontainer.addEventListener('click', (e) => {
     if(filter == null){
         return;
     }
-    console.log(filter); 
+    projectContainer.classList.add('anim-out');
+    setTimeout(() => {
+        //console.log(filter); 
     projects.forEach((project) => {
         console.log(project.dataset.type);
         // 전부다 or 클릭한 필터와 데이터 타입이 매칭하면 보여주고 아니면 안보여준다.
@@ -77,10 +79,13 @@ workBtncontainer.addEventListener('click', (e) => {
         }else{
             project.classList.add('invisible');
         }
-        
     });
-    
-    /* 다른 반복문들 
+        projectContainer.classList.remove('anim-out');
+    }, 300);
+
+
+
+    /* forEach 랑 같은 다른 반복문들 
     console.log(`--------`);
     for(let project of projects){
         console.log(project);
